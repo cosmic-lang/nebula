@@ -5,7 +5,7 @@ use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
 #[command(name="talisman", author="ruka-lang", version, about, arg_required_else_help = true)]
-/// General purpose programming language
+/// Package Manager for Ruka
 struct Cli {
   #[command(subcommand)]
   command: Option<Commands>
