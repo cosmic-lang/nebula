@@ -4,8 +4,8 @@ use anyhow::Result;
 use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
-#[command(name="tea", author="rexlang", version, about, arg_required_else_help = true)]
-/// Package Manager for Rex
+#[command(name="halogen", author="iodo-lang", version, about, arg_required_else_help = true)]
+/// Package Manager for Iodo
 struct Cli {
   #[command(subcommand)]
   command: Option<Commands>
