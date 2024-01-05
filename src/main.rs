@@ -4,8 +4,8 @@ use anyhow::Result;
 use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
-#[command(name="nebula", author="cosmic-lang", version, about, arg_required_else_help = true)]
-/// Package Manager for Rex
+#[command(name="talisman", author="conjure-lang", version, about, arg_required_else_help = true)]
+/// Package Manager for Conjure
 struct Cli {
   #[command(subcommand)]
   command: Option<Commands>
